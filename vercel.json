@@ -1,0 +1,12 @@
+{
+  "functions": {
+    "api/deploy.js": {
+      "maxDuration": 30
+    }
+  },
+  "routes": [
+    { "src": "/api/deploy", "dest": "/api/deploy.js" },
+    { "src": "/(.*)", "dest": "/public/$1" }
+  ],
+  "public": true
+}
