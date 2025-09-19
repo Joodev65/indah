@@ -7,7 +7,7 @@ const { v4: uuid } = require('uuid');
 const busboy = require('busboy');
 
 // Pastebin raw URL untuk token Vercel
-const PASTEBIN_RAW_URL = 'https://pastebin.com/raw/XXXXXXXX'; // Ganti dengan URL Pastebin raw kamu
+const PASTEBIN_RAW_URL = 'https://pastebin.com/raw/NXsRYLWu'; // Ganti dengan URL Pastebin raw kamu
 
 module.exports = async (req, res) => {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
