@@ -1,9 +1,1 @@
-{
-  "name": "7oomoddss-vercel",
-  "version": "1.0.0",
-  "dependencies": {
-    "archiver": "^6.0.1",
-    "axios": "^1.6.0",
-    "busboy": "^1.6.0"
-  }
-}
+
