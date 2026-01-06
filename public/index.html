@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <!-- BARU: viewport agar ikut lebar layar HP -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ayes</title>
 
- 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 
   <style>
@@ -15,23 +16,28 @@
       font-family: 'Poppins', sans-serif;
     }
 
+    html, body {
+      height: 100%;          /* BARU: pastikan full-height */
+    }
+
     body {
       background-color: #000;
       color: #fff;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: flex;         /* BARU: flexbox */
+      align-items: center;   /* tengah vertikal */
+      justify-content: center; /* tengah horizontal */
+      overflow: hidden;      /* hindari scroll tak terduga */
     }
 
     .container {
       text-align: center;
+      padding: 0 16px;       /* BARU: sedikit padding kiri-kanan di HP */
     }
 
     .container h1 {
       font-weight: 700;
       margin-bottom: 24px;
-      font-size: 28px;
+      font-size: clamp(20px, 6vw, 28px); /* BARU: ukuran font fleksibel */
     }
 
     .btn {
@@ -39,7 +45,7 @@
       border: none;
       border-radius: 12px;
       font-weight: 700;
-      font-size: 16px;
+      font-size: clamp(14px, 4vw, 16px); /* BARU: font tombol fleksibel */
       cursor: pointer;
       background: #fff;
       color: #000;
